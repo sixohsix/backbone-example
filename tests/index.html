@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+                    "http://www.w3.org/TR/html4/loose.dtd">
+<!--
+  == This file tests your javascript.
+  ==
+  == To run it, open it in a browser, and QUnit will do the rest.
+  -->
+<html>
+<head>
+
+  <!-- These files are needed by QUnit. -->
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/qunit/git/qunit.css" type="text/css" media="screen" />
+  <script type="text/javascript" src="http://code.jquery.com/qunit/git/qunit.js"></script>
+
+  <!-- These files are needed by Backbone. -->
+  <script type="text/javascript" src="js/src/underscore-min.js"></script>
+  <script type="text/javascript" src="js/src/json2.js"></script>
+  <script type="text/javascript" src="js/src/backbone.js"></script>
+
+
+  <!-- These are the JS files you want to test.
+       Note that js/src is a symlink to /src. The rules of browser security
+       don't let you visit "../src" to get your files.
+    -->
+  <script type="text/javascript" src="js/src/queryrouter.js"></script>
+
+  <!-- These are the tests themselves. -->
+  <script type="text/javascript" src="js/test_query_router.js"></script>
+
+</head>
+
+<!-- The stuff in the body is used to render QUnit test output. -->
+<body>
+ <h1 id="qunit-header">QUnit example</h1>
+ <h2 id="qunit-banner"></h2>
+ <div id="qunit-testrunner-toolbar"></div>
+ <h2 id="qunit-userAgent"></h2>
+ <ol id="qunit-tests"></ol>
+ <div id="qunit-fixture">test markup, will be hidden</div>
+</body>
+</html>
