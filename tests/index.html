@@ -14,19 +14,21 @@
   <script type="text/javascript" src="http://code.jquery.com/qunit/git/qunit.js"></script>
 
   <!-- These files are needed by Backbone. -->
-  <script type="text/javascript" src="js/src/underscore-min.js"></script>
-  <script type="text/javascript" src="js/src/json2.js"></script>
-  <script type="text/javascript" src="js/src/backbone.js"></script>
+  <script type="text/javascript" src="src/lib/underscore-min.js"></script>
+  <script type="text/javascript" src="src/lib/json2.js"></script>
+  <script type="text/javascript" src="src/lib/backbone.js"></script>
 
 
-  <!-- These are the JS files you want to test.
-       Note that js/src is a symlink to /src. The rules of browser security
+  <!-- These are the JS files under test.
+       
+       Note that src is a symlink to ../src. The rules of browser security
        don't let you visit "../src" to get your files.
     -->
-  <script type="text/javascript" src="js/src/queryrouter.js"></script>
+  <script type="text/javascript" src="src/queryrouter.js"></script>
 
+  
   <!-- These are the tests themselves. -->
-  <script type="text/javascript" src="js/test_query_router.js"></script>
+  <script type="text/javascript" src="test_query_router.js"></script>
 
 </head>
 
