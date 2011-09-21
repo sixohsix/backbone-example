@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="src/lib/json2.js"></script>
+    <script type="text/javascript" src="src/lib/underscore-min.js"></script>
+    <script type="text/javascript" src="src/lib/backbone.js"></script>
+    <script type="text/javascript" src="src/my_code.js"></script>
+    <title>Super-great incrementing counter example</title>
+  </head>
+  <body>
+    <div id="the_counter"></div>
+    <button onclick="$('#the_counter').data('counter_model').increment()">
+      Click me to increment
+    </button>
+    <script type="text/javascript">
+      $(function () {
+        $("#the_counter").setup_counter();
+      });
+    </script>
+    <p>This is an example script that uses the incrementing counter
+    backbone.js model and view. If you have not done so, read the PDF
+    and code for this example.</p>
+    <p>Once you know what's going on, try the following exercises:</p>
+    <ol>
+      <li>Add a new button on this page that resets the counter to zero.</li>
+      <li>Add a second, independent, incrementing counter on this page.</li>
+      <li>Add a third incrementing counter and a button that increments this counter with the sum of the first two counters.</li>
+    </ol>
+  </body>
+</html>
